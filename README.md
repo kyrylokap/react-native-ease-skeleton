@@ -23,13 +23,13 @@ Crafted specifically for complex lists (`FlashList`, `LegendList`), leveraging `
 
 ```bash
 # Using npm
-npm install react-native-ease-skeleton react-native-ease react-native-safe-area-context
+npm install react-native-ease-skeleton react-native-ease
 
 # Using yarn
-yarn add react-native-ease-skeleton react-native-ease react-native-safe-area-context
+yarn add react-native-ease-skeleton react-native-ease
 
 # Using bun
-bun add react-native-ease-skeleton react-native-ease react-native-safe-area-context
+bun add react-native-ease-skeleton react-native-ease
 ```
 
 > [!TIP]
