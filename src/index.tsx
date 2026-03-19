@@ -58,22 +58,34 @@ export const Skeleton = ({
     );
   }
   return (
-    <EaseView
+    <View
       style={[
-        { width, height, borderRadius },
+        {
+          width,
+          height,
+          borderRadius,
+          backgroundColor: activeColors[0],
+          overflow: 'hidden',
+        },
         style ? style : styles.container,
       ]}
-      initialAnimate={{ backgroundColor: activeColors[0] }}
-      animate={{ backgroundColor: activeColors[1] }}
-      transition={{
-        type: 'timing',
-        duration: duration,
-        easing: 'easeInOut',
-        loop: 'reverse',
-      }}
     >
+      <EaseView
+        style={[
+          StyleSheet.absoluteFillObject,
+          { backgroundColor: activeColors[1], opacity: 0 },
+        ]}
+        initialAnimate={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          type: 'timing',
+          duration: duration,
+          easing: 'easeInOut',
+          loop: 'reverse',
+        }}
+      />
       {children}
-    </EaseView>
+    </View>
   );
 };
 

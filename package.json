@@ -157,5 +157,8 @@
       "release-it"
     ],
     "version": "0.57.2"
+  },
+  "dependencies": {
+    "react-native-safe-area-context": "^5.7.0"
   }
 }

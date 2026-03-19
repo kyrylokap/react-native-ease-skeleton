@@ -2974,6 +2974,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@legendapp/list@npm:^2.0.19":
+  version: 2.0.19
+  resolution: "@legendapp/list@npm:2.0.19"
+  dependencies:
+    use-sync-external-store: "npm:^1.5.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/8201cd3ebf59bb885b8289e0e65df3134a3d59f9b7fce9b30884a50fab8b268ed601dec742bfa48beeb4fec45fdba8d69af56bf1e16e5afbdce0e1db7a1c56d8
+  languageName: node
+  linkType: hard
+
 "@nicolo-ribaudo/eslint-scope-5-internals@npm:5.1.1-v1":
   version: 5.1.1-v1
   resolution: "@nicolo-ribaudo/eslint-scope-5-internals@npm:5.1.1-v1"
@@ -3514,6 +3526,19 @@ __metadata:
   peerDependencies:
     release-it: ^18.0.0 || ^19.0.0
   checksum: 10c0/d7812cfbbc34f7258385801393a1d88d7d6f76aeebb4fa2a884156f5382ba93f7f14be1f7b4d1f2b6982c1bf10e33c4ca3a8374fc2cde50cf4e1d1a929129da4
+  languageName: node
+  linkType: hard
+
+"@shopify/flash-list@npm:2.0.2":
+  version: 2.0.2
+  resolution: "@shopify/flash-list@npm:2.0.2"
+  dependencies:
+    tslib: "npm:2.8.1"
+  peerDependencies:
+    "@babel/runtime": "*"
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/c4e88348ce66e8f51c6213a42574a097d54cebf2125dc3fd8c077f3f7b83e25209c67bcb9a9102a3178c146cf5c23a978febd9a5ed5328ba1d7c663b5a8149d2
   languageName: node
   linkType: hard
 
@@ -11118,6 +11143,8 @@ __metadata:
   resolution: "react-native-ease-skeleton-example@workspace:example"
   dependencies:
     "@expo/metro-runtime": "npm:~55.0.6"
+    "@legendapp/list": "npm:^2.0.19"
+    "@shopify/flash-list": "npm:2.0.2"
     expo: "npm:~55.0.8"
     expo-status-bar: "npm:~55.0.4"
     react: "npm:19.2.0"
@@ -11126,6 +11153,7 @@ __metadata:
     react-native-builder-bob: "npm:^0.40.18"
     react-native-ease: "npm:^0.3.0"
     react-native-monorepo-config: "npm:^0.3.3"
+    react-native-safe-area-context: "npm:^5.7.0"
     react-native-web: "npm:~0.21.0"
   languageName: unknown
   linkType: soft
@@ -11154,6 +11182,7 @@ __metadata:
     react: "npm:19.2.0"
     react-native: "npm:0.83.2"
     react-native-builder-bob: "npm:^0.40.18"
+    react-native-safe-area-context: "npm:^5.7.0"
     release-it: "npm:^19.0.4"
     turbo: "npm:^2.5.6"
     typescript: "npm:^5.9.2"
@@ -11190,6 +11219,16 @@ __metadata:
     escape-string-regexp: "npm:^5.0.0"
     fast-glob: "npm:^3.3.3"
   checksum: 10c0/42dd8de1bb976c794fe1124ab08fba4645f189c7bdbdcd24dc0e05b639591e690891f89e5dba33c57691840365af85b48004c29c1c128ff195a95e766bb9752e
+  languageName: node
+  linkType: hard
+
+"react-native-safe-area-context@npm:^5.7.0":
+  version: 5.7.0
+  resolution: "react-native-safe-area-context@npm:5.7.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/c3799e17321b41df1e0a10492c98472f8f8225ef0bbaf8146c4a9acb9519aae9ac11429059143c215e4402c2808e8445274850a339f8477522ded2461e18da80
   languageName: node
   linkType: hard
 
@@ -12473,7 +12512,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.1, tslib@npm:^2.1.0":
+"tslib@npm:2.8.1, tslib@npm:^2.0.1, tslib@npm:^2.1.0":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
@@ -12770,6 +12809,15 @@ __metadata:
   version: 5.0.0
   resolution: "url-join@npm:5.0.0"
   checksum: 10c0/ed2b166b4b5a98adcf6828a48b6bd6df1dac4c8a464a73cf4d8e2457ed410dd8da6be0d24855b86026cd7f5c5a3657c1b7b2c7a7c5b8870af17635a41387b04c
+  languageName: node
+  linkType: hard
+
+"use-sync-external-store@npm:^1.5.0":
+  version: 1.6.0
+  resolution: "use-sync-external-store@npm:1.6.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 10c0/35e1179f872a53227bdf8a827f7911da4c37c0f4091c29b76b1e32473d1670ebe7bcd880b808b7549ba9a5605c233350f800ffab963ee4a4ee346ee983b6019b
   languageName: node
   linkType: hard
 
