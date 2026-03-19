@@ -67,6 +67,9 @@ export const Skeleton = ({
 
   return (
     <View
+      pointerEvents="none"
+      importantForAccessibility="no-hide-descendants"
+      accessible={false}
       style={[
         {
           borderRadius,
