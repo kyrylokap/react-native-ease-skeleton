@@ -6,7 +6,14 @@ Lightweight skeleton component for lists using react-native-ease animating libra
 
 
 ```sh
-npm install react-native-ease-skeleton
+# using npm
+npm install react-native-ease-skeleton react-native-ease
+
+# using yarn
+yarn add react-native-ease-skeleton react-native-ease
+
+# using bun
+bun add react-native-ease-skeleton react-native-ease
 ```
 
 
