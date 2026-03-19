@@ -6,6 +6,7 @@ import {
   type ViewStyle,
 } from 'react-native';
 import { StyleSheet } from 'react-native';
+
 const defaultColors = {
   light: ['#E1E9EE', '#9e9e9eff'] as [string, string],
   dark: ['#1D1D1D', '#333333'] as [string, string],
@@ -22,6 +23,7 @@ export interface SkeletonProps {
   duration?: number;
   children?: React.ReactNode;
 }
+
 /**
  * Skeleton component for React Native
  * @param width - Width of the skeleton
@@ -45,35 +47,35 @@ export const Skeleton = ({
   children,
 }: SkeletonProps) => {
   const activeColors = colors || defaultColors[colorMode];
+
   if (!show) {
     return (
       <View
         style={[
           {
             borderRadius,
-            alignSelf: 'flex-start',
             ...(width !== undefined && { width }),
             ...(height !== undefined && { height }),
           },
-          style || styles.container,
+          style,
         ]}
       >
         {children}
       </View>
     );
   }
+
   return (
     <View
       style={[
         {
           borderRadius,
-          alignSelf: 'flex-start',
           backgroundColor: activeColors[0],
           overflow: 'hidden',
           ...(width !== undefined && { width }),
           ...(height !== undefined && { height }),
         },
-        style || styles.container,
+        style,
       ]}
     >
       <EaseView
@@ -94,10 +96,3 @@ export const Skeleton = ({
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
