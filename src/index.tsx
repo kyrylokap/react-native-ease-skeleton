@@ -34,8 +34,8 @@ export interface SkeletonProps {
  * @param duration - Duration of the animation
  */
 export const Skeleton = ({
-  width = 100,
-  height = 100,
+  width,
+  height,
   borderRadius = 4,
   show,
   colorMode = 'light',
@@ -49,8 +49,13 @@ export const Skeleton = ({
     return (
       <View
         style={[
-          { width, height, borderRadius },
-          style ? style : styles.container,
+          {
+            borderRadius,
+            alignSelf: 'flex-start',
+            ...(width !== undefined && { width }),
+            ...(height !== undefined && { height }),
+          },
+          style || styles.container,
         ]}
       >
         {children}
@@ -61,13 +66,14 @@ export const Skeleton = ({
     <View
       style={[
         {
-          width,
-          height,
           borderRadius,
+          alignSelf: 'flex-start',
           backgroundColor: activeColors[0],
           overflow: 'hidden',
+          ...(width !== undefined && { width }),
+          ...(height !== undefined && { height }),
         },
-        style ? style : styles.container,
+        style || styles.container,
       ]}
     >
       <EaseView
