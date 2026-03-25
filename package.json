@@ -43,7 +43,8 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "react-native-ease-skeleton"
   ],
   "repository": {
     "type": "git",
